@@ -1,0 +1,75 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #545454;
+    color: white;
+    font-weight: lighter;
+
+    .partcontainer{
+        width:60%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        .trade{
+            h1{
+                font-weight: lighter;
+            }
+            p{
+                cursor: pointer;
+            }
+        }
+        .user{
+            h1{
+                font-weight: lighter;
+            }
+            p{
+                cursor: pointer;
+            }
+        }
+        .contact{
+            h1{
+                font-weight: lighter;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                .pin,.phone,.mail{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: 1rem;
+                }
+                .pin{
+                   stroke: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .foot{
+        font-size: 0.5rem;
+
+
+        .partcontainer{
+            width: 80%;
+
+            h1{
+                font-size: 0.7rem;
+            }
+
+            .contact{
+                p{
+                    .pin,.phone,.mail{
+                        width: 0.7rem;
+                        height: 0.7rem;
+                    } 
+                }
+            }
+        }
+    }
+}

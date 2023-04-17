@@ -1,0 +1,186 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto 0;
+}
+.details .name {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.details .name .nameSec {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .userId {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.details .userId .idSec {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .location {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.details .location .locSec p {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.details .contact .contactSec p {
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+.details .description {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.details .description .desText {
+  width: 30vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-wrap: break-word;
+  background-color: #DFDFDF;
+  padding: 0.2rem;
+}
+
+.addItem {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.addItem h2 {
+  color: #545454;
+  font-weight: lighter;
+  cursor: pointer;
+  margin: 1rem;
+}
+.addItem .addbtn {
+  stroke: #545454;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover .details {
+  width: 60vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+}
+.cover .details .closeSec {
+  display: flex;
+  justify-content: flex-end;
+}
+.cover .details .closeSec .close {
+  width: 1rem;
+  height: 1rem;
+  stroke-width: 1.2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+.cover .details .detailsSec {
+  display: flex;
+  justify-content: space-between;
+  width: 55vw;
+  margin: 0 auto 0;
+}
+.cover .details .detailsSec .imgSec {
+  width: 20vw;
+  min-width: 100px;
+  min-height: 100px;
+  height: 20vw;
+  background-color: #f5f5f5;
+}
+.cover .details .detailsSec .details {
+  width: 30vw;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+}
+.cover .details .detailsSec .details label {
+  margin: 0.5rem 0.25 0;
+}
+.cover .details .detailsSec .details label input {
+  margin: 0 0.25rem 0.5rem;
+  width: 22vw;
+  height: 2rem;
+}
+.cover .details .detailsSec .details .descript {
+  align-items: flex-start;
+}
+.cover .details .detailsSec .details .descript textarea {
+  margin: 0 0.25rem 0.5rem;
+  width: 22vw;
+  height: auto;
+}
+.cover .details .formControl {
+  width: 55vw;
+  margin: 1rem auto 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.cover .details .formControl .clear {
+  width: 6rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 0.1rem solid #545454;
+  color: #545454;
+  margin: 0 0.5rem 0;
+  cursor: pointer;
+}
+.cover .details .formControl .add {
+  width: 6rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 0.1rem solid #1E48DB;
+  color: #1E48DB;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cover .details .detailsSec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cover .details .detailsSec .imgSec {
+    margin-bottom: 1rem;
+  }
+  .cover .details .detailsSec .details {
+    font-size: 0.7rem;
+  }
+  .cover .details .detailsSec .details label input {
+    width: 40vw;
+    height: 1.5rem;
+  }
+  .cover .details .detailsSec .details .descript textarea {
+    width: 40vw;
+  }
+}/*# sourceMappingURL=profileComponentStyles.module.css.map */

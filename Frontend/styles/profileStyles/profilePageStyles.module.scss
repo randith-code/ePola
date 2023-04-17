@@ -1,0 +1,43 @@
+.container{
+    background-color: #DFDFDF;
+    display: flex;
+    flex-direction: column;
+    .card{
+        background-color: white;
+        width: 80vw;
+        height:fit-content;
+        margin: 3rem auto 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .selection{
+            width: 70vw;
+            display: flex;
+            justify-content: space-around;
+            font-size: large;
+            margin-top: 1rem;
+
+            p{
+                cursor: pointer;
+            }
+        }
+        .profilehr{
+            width: 70vw;
+            border: none;
+            background-color: #1E48DB;
+            height: 0.1rem;
+        }
+    }
+    .logotCont{
+        width: 80vw;
+        margin: 2rem auto 2rem;
+
+        .logout{
+            background-color: white;
+            width: 10vw;
+            cursor: pointer;
+            padding: 1rem;
+        }
+    }
+}
